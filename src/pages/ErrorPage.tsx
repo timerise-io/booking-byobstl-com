@@ -64,7 +64,7 @@ const ErrorPage = () => {
       <StyledButton
         buttonType="primary"
         onClick={() => {
-          window.open("https://timerise.io/", "_blank")?.focus();
+          window.open("https://www.byobstl.com", "_blank")?.focus();
         }}
       >
         Visit our website

@@ -32,9 +32,9 @@ const VerticalLine = styled.div`
 `;
 
 const TimeRiseLogo = styled.img`
-  margin-left: 10px;
-  height: 10px;
-  margin-bottom: 5px;
+  margin-left: 2px;
+  height: 18px;
+  margin-top: -24px;
 `;
 
 export const FooterLinkWrapper = styled.div`
@@ -87,8 +87,8 @@ const StyledLink = styled.a`
 `;
 
 const footerLogo: Record<"light" | "dark", string> = {
-  dark: "https://cdn.timerise.io/app/timerise-logo-invert.png",
-  light: "https://cdn.timerise.io/app/timerise-logo.png",
+  dark: "https://cdn.timerise.io/admin/disco-logo.svg",
+  light: "https://cdn.timerise.io/admin/disco-logo.svg",
 };
 
 const ErrorFooterWrapper = styled.div`
@@ -140,7 +140,7 @@ const Footer = () => {
         <Typography typographyType="label" as="div" color="darkGrey">
           {t("footer.powered-by")}
         </Typography>
-        <StyledLink href="https://timerise.io/" target="_blank">
+        <StyledLink href="https://byobstl.com" target="_blank">
           <TimeRiseLogo src={footerLogo[themeType]} alt="timerise logo" data-cy="time-rise-footer-logo" />
         </StyledLink>
       </Row>
