@@ -1,7 +1,7 @@
 {
   "hosting": [
     {
-      "target": "service-app",
+      "target": "booking-byobstl-com",
       "public": "build",
       "ignore": [
         "firebase.json",
