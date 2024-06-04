@@ -9,9 +9,9 @@ import { useTranslation } from "react-i18next";
 import { useRecoilValue } from "recoil";
 import { slotsDayPattern } from "state/selectors/slotsDayPattern";
 import styled, { css } from "styled-components";
-import { HoursSystem } from "../HoursSystem";
+// import { HoursSystem } from "../HoursSystem";
 import ServiceCalendarActionRow from "../ServiceCalendarActionRow";
-import TimezoneInfo from "../TimezoneInfo";
+// import TimezoneInfo from "../TimezoneInfo";
 import ServiceCalendar from "./ServiceCalendar/ServiceCalendar";
 
 const WrapperCard = styled(Card)<{ fullHeight: boolean } & CardProps>`
@@ -58,10 +58,10 @@ const TimezoneStyledRow = styled(Row)`
   }
 `;
 
-const TimezoneHourSystemStyledContainer = styled.div`
-  display: flex;
-  gap: 10px;
-`;
+// const TimezoneHourSystemStyledContainer = styled.div`
+//   display: flex;
+//   gap: 10px;
+// `;
 
 const FULL_HEIGHT_COUNT = 10;
 
@@ -81,10 +81,10 @@ const ServiceDateTime = () => {
           <Typography typographyType="h3" as="h3" displayType="contents">
             {t(`select-date-and-time`)}
           </Typography>
-          <TimezoneHourSystemStyledContainer>
+          {/* <TimezoneHourSystemStyledContainer>
             <TimezoneInfo />
             <HoursSystem />
-          </TimezoneHourSystemStyledContainer>
+          </TimezoneHourSystemStyledContainer> */}
         </TimezoneStyledRow>
         <ServiceCalendarActionRow />
         <ServiceCalendar />

@@ -12,8 +12,8 @@ import { selectedSlots } from "state/atoms/selectedSlots";
 import { serviceAtom } from "state/atoms/service";
 import { serviceSlotsAtom } from "state/atoms/serviceSlots";
 import styled from "styled-components";
-import { HoursSystem } from "../HoursSystem";
-import TimezoneInfo from "../TimezoneInfo";
+// import { HoursSystem } from "../HoursSystem";
+// import TimezoneInfo from "../TimezoneInfo";
 
 const WrapperCard = styled(Card)`
   position: relative;
@@ -32,10 +32,10 @@ const TimezoneStyledRow = styled(Row)`
   }
 `;
 
-const TimezoneHourSystemStyledContainer = styled.div`
-  display: flex;
-  gap: 10px;
-`;
+// const TimezoneHourSystemStyledContainer = styled.div`
+//   display: flex;
+//   gap: 10px;
+// `;
 
 export const ServiceMultiDateEvent = () => {
   const { t } = useTranslation(["booking"]);
@@ -53,10 +53,10 @@ export const ServiceMultiDateEvent = () => {
           <Typography typographyType="h3" as="h3" displayType="contents">
             {t(`date-and-time`)}
           </Typography>
-          <TimezoneHourSystemStyledContainer>
+          {/* <TimezoneHourSystemStyledContainer>
             <TimezoneInfo />
             <HoursSystem />
-          </TimezoneHourSystemStyledContainer>
+          </TimezoneHourSystemStyledContainer> */}
         </TimezoneStyledRow>
         <EventsMultiDatesWrapper handlers={handlers} additionalData={{ service, slots }} />
       </Column>

@@ -1,6 +1,6 @@
 import React from "react";
 import { Typography } from "components/Typography";
-import TimezoneInfo from "features/service/components/Service/TimezoneInfo";
+// import TimezoneInfo from "features/service/components/Service/TimezoneInfo";
 import styled from "styled-components";
 
 const Wrapper = styled.div`
@@ -17,7 +17,7 @@ const ShortId: React.FC<{ shortId: string }> = ({ shortId }) => {
         ID: <strong>{shortId}</strong>
       </Typography>
 
-      <TimezoneInfo />
+      {/* <TimezoneInfo /> */}
     </Wrapper>
   );
 };
